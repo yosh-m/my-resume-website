@@ -238,5 +238,8 @@ footer {
     footer {
         text-align: center;
     }
+    .bottom-nav li {
+        margin: 0;
+    }
     
 }
