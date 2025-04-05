@@ -33,8 +33,7 @@ body {
     line-height: 1.4;
 }
 h1, h2 { 
-    font-family: "Handlee", cursive; 
-    /* font-family: "Gochi Hand", cursive;  */
+    font-family: "Handlee", cursive;
     font-weight: 400;
     margin: 0;
 }
@@ -88,40 +87,50 @@ h2 {
     
 }
 
-/* LINKS
+/* TOP NAV
 ------------------------------------*/
-a {
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #566246ff;
+    overflow: hidden;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #a4c2a5ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Handlee", cursive; 
+    font-weight: 400;
+    font-size: 1.7rem; /* 17px */
+}
+  
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #a4c2a5ff;
     color: #566246ff;
 }
-a:hover {
-    color: #d8af82;
-    text-decoration: none;
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #a4c2a5ff;
+    color: #566246ff;
 }
-footer a {
-    color: #a4c2a5ff;
+@media screen and (max-width: 470px) {
+    .topnav a {
+        padding: 10px 12px;
+        font-size: 1.5rem; /* 15px */
+    }
 }
-footer a:hover {
-    color: #d8af82;
-}
-.btn {
-    background: #566246ff;
-    color: #a4c2a5ff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem; /* 12px */
-    display: inline-block;
-    padding: 7px;
-    letter-spacing: .1em;
-    line-height: 1;
-    border-radius: 4px;
-}
-
-
 /* HOME 
 ------------------------------------*/
 .home {
     background: url(../images/ingmar-h-KZwrFH42JCg-unsplash.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
 }
@@ -134,9 +143,11 @@ footer a:hover {
 
 /* RESUME 
 ------------------------------------*/
+
 .resume {
     background: url(../images/ingmar-h-KZwrFH42JCg-unsplash.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     background-attachment: fixed;    
@@ -147,12 +158,6 @@ footer a:hover {
 .resume-section h2 {
     border-bottom: 2px dashed #566246ff;
 }
-.download-link {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-    font-size: 1.5rem; /* 15px */
-}
 @media screen and (max-width: 649px) {
     .resume {
         background:
@@ -160,10 +165,6 @@ footer a:hover {
     }
    .resume-section {
         margin-top: 20px;
-    }
-    .download-link {
-        font-size: 1rem; /* 10px */
-        padding: 5px;
     }
 }
 
@@ -217,14 +218,6 @@ footer {
     background-color: #566246ff;
     color: #a4c2a5ff;
 }
-.bottom-nav {
-    list-style-type: none;
-    padding: 0;
-}
-.bottom-nav li {
-    display: inline-block;
-    margin-left: 10px;
-}
 
 @media screen and (min-width: 860px) {
     footer {
@@ -237,9 +230,6 @@ footer {
 @media screen and (max-width: 859px) {
     footer {
         text-align: center;
-    }
-    .bottom-nav li {
-        margin: 0;
     }
     
 }
