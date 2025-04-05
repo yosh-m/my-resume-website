@@ -159,10 +159,6 @@ h2 {
     border-bottom: 2px dashed #566246ff;
 }
 @media screen and (max-width: 649px) {
-    .resume {
-        background:
-            repeating-conic-gradient(#566246ff 0 .00002%,#a4c2a5ff 0 .0005%) 0 0/5000px 4000px;
-    }
    .resume-section {
         margin-top: 20px;
     }
